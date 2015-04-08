@@ -1,0 +1,14 @@
+/Users/torianin/Projects/logisticsApp/Logistics.ObjectMothers/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/torianin/Projects/logisticsApp/Logistics.ObjectMothers/bin/Debug/Logistics.Domain.dll
+/Users/torianin/Projects/logisticsApp/Logistics.ObjectMothers/bin/Debug/Logistics.Domain.dll.mdb
+/Users/torianin/Projects/logisticsApp/Logistics.ObjectMothers/bin/Debug/Logistics.ObjectMothers.dll.mdb
+/Users/torianin/Projects/logisticsApp/Logistics.ObjectMothers/bin/Debug/Logistics.ObjectMothers.dll
+/Users/torianin/Projects/logisticsApp/Logistics.ObjectMothers/obj/x86/Debug/Logistics.ObjectMothers.dll
+/Users/torianin/Projects/logisticsApp/Logistics.ObjectMothers/obj/x86/Debug/Logistics.ObjectMothers.dll.mdb
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.ObjectMothers/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.ObjectMothers/bin/Debug/Logistics.ObjectMothers.dll.mdb
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.ObjectMothers/bin/Debug/Logistics.ObjectMothers.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.ObjectMothers/obj/x86/Debug/Logistics.ObjectMothers.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.ObjectMothers/obj/x86/Debug/Logistics.ObjectMothers.dll.mdb
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.ObjectMothers/bin/Debug/Logistics.Domain.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.ObjectMothers/bin/Debug/Logistics.Domain.dll.mdb

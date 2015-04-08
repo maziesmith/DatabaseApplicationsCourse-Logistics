@@ -1,0 +1,14 @@
+/Users/torianin/Projects/logisticsApp/Logistics.Infrastructure/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/torianin/Projects/logisticsApp/Logistics.Infrastructure/bin/Debug/Logistics.Infrastructure.dll.mdb
+/Users/torianin/Projects/logisticsApp/Logistics.Infrastructure/bin/Debug/Logistics.Infrastructure.dll
+/Users/torianin/Projects/logisticsApp/Logistics.Infrastructure/obj/x86/Debug/Logistics.Infrastructure.dll
+/Users/torianin/Projects/logisticsApp/Logistics.Infrastructure/obj/x86/Debug/Logistics.Infrastructure.dll.mdb
+/Users/torianin/Projects/logisticsApp/Logistics.Infrastructure/bin/Debug/Logistics.Domain.dll
+/Users/torianin/Projects/logisticsApp/Logistics.Infrastructure/bin/Debug/Logistics.Domain.dll.mdb
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Infrastructure/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Infrastructure/bin/Debug/Logistics.Infrastructure.dll.mdb
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Infrastructure/bin/Debug/Logistics.Infrastructure.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Infrastructure/obj/x86/Debug/Logistics.Infrastructure.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Infrastructure/obj/x86/Debug/Logistics.Infrastructure.dll.mdb
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Infrastructure/bin/Debug/Logistics.Domain.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Infrastructure/bin/Debug/Logistics.Domain.dll.mdb
