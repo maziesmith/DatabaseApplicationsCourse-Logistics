@@ -17,7 +17,6 @@ namespace Logistics.Infrastructure.Repositories
 			logs = new List<Log>
 			{
 				new Log {
-					Id = 1,
 					Value = "Ola",
 					CreatedAt = DateTime.Now
 				}

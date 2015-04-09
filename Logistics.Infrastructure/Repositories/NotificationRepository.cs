@@ -17,7 +17,6 @@ namespace Logistics.Infrastructure.Repositories
 			notifications = new List<Notification>
 			{
 				new Notification {
-					Id = 1,
 					ShortValue = "Ola",
 					FullValue = "Piesek",
 					NotificationType = NotificationType.EMAIL

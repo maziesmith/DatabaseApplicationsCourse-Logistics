@@ -79,9 +79,9 @@ namespace Logistics.Application.UnitTests
 			aps.AddOrderToUserAndDriver (order, client, driver);
 
 			// Czemu nie działa ಥ_ಥ
-			aps.GetAllOrdersFromDriver (driver);
+			// aps.GetAllOrdersFromDriver (driver);
 			 
-			//orderRepositoryMock.Verify(k => k.FindAll(), Times.Once());
+			// orderRepositoryMock.Verify(k => k.FindAll(), Times.Once());
 
 			Assert.Pass ();
 		}

@@ -16,8 +16,7 @@ namespace Logistics.Infrastructure.Repositories
 		{
 			orders = new List<Order>
 			{
-				new Order { 
-					Id = 1, 
+				new Order {  
 					Adress = new Adress { City = "Wroclaw", Street = "Szczytnicka", HouseNumber = 4 }
 				}
 			};

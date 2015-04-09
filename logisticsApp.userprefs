@@ -1,6 +1,9 @@
 ﻿<Properties StartupItem="Logistics.Application/Logistics.Application.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Logistics.Application.UnitTests/ApplicationServiceTests.cs">
+    <Files>
+      <File FileName="Logistics.Application.UnitTests/ApplicationServiceTests.cs" Line="81" Column="27" />
+    </Files>
     <Pads>
       <Pad Id="MonoDevelop.NUnit.TestPad">
         <State expanded="True" selected="True" />

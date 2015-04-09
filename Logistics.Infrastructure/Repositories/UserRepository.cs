@@ -16,7 +16,7 @@ namespace Logistics.Infrastructure.Repositories
 		{
 			users = new List<User>
 			{
-				new User { 	Id = 1, Login = "Olamakota", Email = "tori@robert-i.com", EncryptedPassword = "olamakota123", Role = Role.ADMIN }
+				new User { Login = "Olamakota", Email = "tori@robert-i.com", EncryptedPassword = "olamakota123", Role = Role.ADMIN }
 			};
 		}
 			

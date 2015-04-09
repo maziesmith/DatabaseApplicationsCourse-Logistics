@@ -33,26 +33,47 @@
   <ItemGroup>
     <Folder Include="Model\" />
     <Folder Include="Repositories\" />
-    <Folder Include="Model\Order\" />
-    <Folder Include="Model\User\" />
-    <Folder Include="Model\Notification\" />
-    <Folder Include="Model\Log\" />
+    <Folder Include="Model\Entities\" />
+    <Folder Include="Model\Mappings\" />
+    <Folder Include="Model\Mappings\Log\" />
+    <Folder Include="Model\Mappings\Notification\" />
+    <Folder Include="Model\Mappings\Order\" />
+    <Folder Include="Model\Mappings\User\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\Order\Order.cs" />
-    <Compile Include="Model\Order\Adress.cs" />
-    <Compile Include="Model\Order\Payment.cs" />
-    <Compile Include="Model\User\User.cs" />
-    <Compile Include="Model\Notification\Notification.cs" />
-    <Compile Include="Model\Notification\NotificationType.cs" />
-    <Compile Include="Model\Log\Log.cs" />
-    <Compile Include="Model\User\Settings.cs" />
-    <Compile Include="Model\User\Role.cs" />
     <Compile Include="Repositories\INotificationRepository.cs" />
     <Compile Include="Repositories\ILogRepository.cs" />
     <Compile Include="Repositories\IOrderRepository.cs" />
     <Compile Include="Repositories\IUserRepository.cs" />
-    <Compile Include="Model\Order\Currency.cs" />
-    <Compile Include="Model\Order\Status.cs" />
+    <Compile Include="Model\Entities\Log\Log.cs" />
+    <Compile Include="Model\Entities\Notification\Notification.cs" />
+    <Compile Include="Model\Entities\Notification\NotificationType.cs" />
+    <Compile Include="Model\Entities\Order\Adress.cs" />
+    <Compile Include="Model\Entities\Order\Currency.cs" />
+    <Compile Include="Model\Entities\Order\Order.cs" />
+    <Compile Include="Model\Entities\Order\Payment.cs" />
+    <Compile Include="Model\Entities\Order\Status.cs" />
+    <Compile Include="Model\Entities\User\Role.cs" />
+    <Compile Include="Model\Entities\User\Settings.cs" />
+    <Compile Include="Model\Entities\User\User.cs" />
+    <Compile Include="Model\Mappings\Log\LogMap.cs" />
+    <Compile Include="Model\Mappings\Notification\NotificationMap.cs" />
+    <Compile Include="Model\Mappings\Order\OrderMap.cs" />
+    <Compile Include="Model\Mappings\User\UserMap.cs" />
+    <Compile Include="Model\Mappings\NHibernateHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\packages\Iesi.Collections.4.0.0.4000\lib\net40\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\packages\NHibernate.4.0.0.4000\lib\net40\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\packages\FluentNHibernate.2.0.1.0\lib\net40\FluentNHibernate.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
