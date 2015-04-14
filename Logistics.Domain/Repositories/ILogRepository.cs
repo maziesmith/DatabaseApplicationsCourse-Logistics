@@ -10,6 +10,8 @@ namespace Logistics.Domain.Repositories
 
 		void Delete(uint id);
 
+		void Update(Log log);
+
 		Log Find(uint id);
 
 		IList<Log> FindAll();

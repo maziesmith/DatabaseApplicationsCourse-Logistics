@@ -12,6 +12,8 @@ namespace Logistics.Domain.Repositories
 
 		User Find(uint id);
 
+		void Update(User user);
+
 		IList<User> FindAll();
 
 		IList<User> FindAllWithRole (Role role);

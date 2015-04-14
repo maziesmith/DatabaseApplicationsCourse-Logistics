@@ -26,3 +26,6 @@
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Domain.UnitTests/bin/Debug/Logistics.Domain.dll.mdb
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Domain.UnitTests/bin/Debug/Logistics.ObjectMothers.dll
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Domain.UnitTests/bin/Debug/Logistics.ObjectMothers.dll.mdb
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Domain.UnitTests/bin/Debug/NHibernate.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Domain.UnitTests/bin/Debug/FluentNHibernate.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Domain.UnitTests/bin/Debug/Iesi.Collections.dll

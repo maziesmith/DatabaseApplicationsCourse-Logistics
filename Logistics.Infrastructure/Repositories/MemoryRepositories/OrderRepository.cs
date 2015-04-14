@@ -27,6 +27,14 @@ namespace Logistics.Infrastructure.Repositories
 			orders.Add (order);
 		}
 
+		public void Update(Order order)
+		{
+			var oldOrder = orders.FirstOrDefault(o => o.Id == order.Id);
+			oldOrder.Adress = order.Adress;
+			oldOrder.Payment = order.Payment;
+			oldOrder.Status = order.Status;
+		}
+
 		public void Delete (uint id)
 		{
 			orders.Remove(orders.Find(o => o.Id == id));

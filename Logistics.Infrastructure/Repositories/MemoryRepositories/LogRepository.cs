@@ -28,6 +28,14 @@ namespace Logistics.Infrastructure.Repositories
 			logs.Add(log);
 		}
 
+		public void Update(Log log)
+		{
+			var oldLog = logs.FirstOrDefault(l => l.Id == log.Id);
+			oldLog.Value = log.Value;
+			oldLog.CreatedAt = log.CreatedAt;
+			oldLog.User = log.User;
+		}
+
 		public void Delete (uint id)
 		{
 			logs.Remove(logs.Find(n => n.Id == id));

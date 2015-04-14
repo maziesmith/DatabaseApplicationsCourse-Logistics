@@ -10,6 +10,8 @@ namespace Logistics.Domain.Repositories
 
 		void Delete(uint id);
 
+		void Update(Notification notification);
+
 		Notification Find(uint id);
 
 		IList<Notification> FindAllForUser(User user);

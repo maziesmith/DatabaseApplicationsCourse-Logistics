@@ -9,6 +9,7 @@ using System.Reflection;
 using NHibernate.Cfg;
 using System.IO;
 using NHibernate.Tool.hbm2ddl;
+using NHibernate.Linq;
 
 
 namespace Logistics.Domain
@@ -46,12 +47,9 @@ namespace Logistics.Domain
 
 		private static void BuildSchema(Configuration config)
 		{
-			// delete the existing db on each run
 			if (File.Exists(DbFile))
 				File.Delete(DbFile);
 
-			// this NHibernate tool takes a configuration (with mapping info in)
-			// and exports a database schema from it
 			new SchemaExport(config)
 				.Create(false, true);
 		}
@@ -59,6 +57,50 @@ namespace Logistics.Domain
 		public static ISession OpenSession()
 		{
 			return SessionFactory.OpenSession ();
+		}
+
+		public static void Insert<T>(T newItem)
+		{
+			using (var session = NHibernateHelper.OpenSession ()) 
+			{
+				using (var transaction = session.BeginTransaction ()) 
+				{
+					session.Save (newItem);
+					transaction.Commit ();
+				}
+			}
+		}
+
+		public static IQueryable<T> Read<T>()
+		{
+			using (var session = NHibernateHelper.OpenSession())
+			{
+				return session.Query<T>();
+			}
+		}
+
+		public static void Update<T>(T newItem)
+		{
+			using (var session = NHibernateHelper.OpenSession ()) 
+			{
+				using (var transaction = session.BeginTransaction ()) 
+				{
+					session.SaveOrUpdate (newItem);
+					transaction.Commit ();
+				}
+			}
+		}
+
+		public static void Delete<T>(T Item)
+		{
+			using (var session = NHibernateHelper.OpenSession ()) 
+			{
+				using (var transaction = session.BeginTransaction ()) 
+				{
+					session.Delete(Item);
+					transaction.Commit ();
+				}
+			}
 		}
 	}
 }

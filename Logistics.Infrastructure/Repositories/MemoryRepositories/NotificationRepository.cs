@@ -29,6 +29,13 @@ namespace Logistics.Infrastructure.Repositories
 			notifications.Add(notification);
 		}
 
+		public void Update(Notification notification)
+		{
+			var oldNotification = notifications.FirstOrDefault(n => n.Id == notification.Id);
+			oldNotification.ShortValue = notification.ShortValue;
+			oldNotification.FullValue = notification.FullValue;
+		}
+
 		public void Delete (uint id)
 		{
 			notifications.Remove(notifications.Find(n => n.Id == id));

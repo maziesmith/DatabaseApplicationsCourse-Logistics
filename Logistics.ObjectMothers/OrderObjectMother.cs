@@ -8,7 +8,6 @@ namespace Logistics.ObjectMothers
 		public static Order CreateNewPLNOrder()
 		{
 			Order o = new Order {
-				Id = 1,
 				Adress = new Adress { City = "Wroclaw", Street = "Szczytnicka", HouseNumber = 4 },
 				Payment = new Payment { Value = 100, Currency = Currency.PLN },
 				Status = Status.INFORMATION_RECEIVED

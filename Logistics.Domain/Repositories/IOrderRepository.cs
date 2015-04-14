@@ -10,6 +10,8 @@ namespace Logistics.Domain.Repositories
 
 		void Delete(uint id);
 
+		void Update(Order order);
+
 		Order Find(uint id);
 
 		IList<Order> FindAllForUser(User user);

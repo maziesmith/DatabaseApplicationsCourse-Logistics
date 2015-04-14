@@ -12,3 +12,6 @@
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.ObjectMothers/obj/x86/Debug/Logistics.ObjectMothers.dll.mdb
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.ObjectMothers/bin/Debug/Logistics.Domain.dll
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.ObjectMothers/bin/Debug/Logistics.Domain.dll.mdb
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.ObjectMothers/bin/Debug/NHibernate.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.ObjectMothers/bin/Debug/FluentNHibernate.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.ObjectMothers/bin/Debug/Iesi.Collections.dll

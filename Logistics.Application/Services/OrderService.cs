@@ -23,7 +23,6 @@ namespace Logistics.Application.Services
 		public Order CreateOrder( Adress adress, Payment payment, uint priority )
 		{
 			Order o = new Order { 
-				Id = 1, 
 				Adress = adress,
 				Payment = payment,
 				Priority = priority

@@ -18,8 +18,8 @@ namespace Logistics.Domain.Model
 			Map (x => x.PhoneNumber);
 			Map (x => x.Role);
 			Map (x => x.CreatedAt);
-			References (x => x.Notification).Cascade.All();
-			References (x => x.Log).Cascade.All();
+			References (x => x.Notification).Cascade.SaveUpdate();
+			References (x => x.Log).Cascade.SaveUpdate();
 		}
 	} 
 }

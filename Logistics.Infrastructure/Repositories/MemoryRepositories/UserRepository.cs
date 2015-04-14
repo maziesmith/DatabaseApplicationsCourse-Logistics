@@ -24,6 +24,18 @@ namespace Logistics.Infrastructure.Repositories
 		{
 			users.Add(user);
 		}
+			
+		public void Update(User user)
+		{
+			var oldUser = users.FirstOrDefault(u => u.Id == user.Id);
+			oldUser.Login = user.Login;
+			oldUser.Username = user.Username;
+			oldUser.Email = user.Email;
+			oldUser.EncryptedPassword = user.EncryptedPassword;
+			oldUser.PhoneNumber = user.PhoneNumber;
+			oldUser.Role = user.Role;
+			oldUser.PhoneNumber = user.PhoneNumber;
+		}
 
 		public void Delete (uint id)
 		{

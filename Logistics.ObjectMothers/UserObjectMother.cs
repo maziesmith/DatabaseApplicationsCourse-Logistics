@@ -8,7 +8,6 @@ namespace Logistics.ObjectMothers
 		public static User CreateNewClient()
 		{
 			User u = new User {
-				Id = 1,
 				Login = "Olamakota",
 				Email = "tori@robert-i.com",
 				EncryptedPassword = "321atokamalo",
@@ -20,7 +19,6 @@ namespace Logistics.ObjectMothers
 		public static User CreateNewDriver()
 		{
 			User u = new User {
-				Id = 1,
 				Login = "Olamakota",
 				Email = "tori@robert-i.com",
 				EncryptedPassword = "321atokamalo",
@@ -32,7 +30,6 @@ namespace Logistics.ObjectMothers
 		public static User CreateNewAdmin()
 		{
 			User u = new User {
-				Id = 1,
 				Login = "Olamakota",
 				Email = "tori@robert-i.com",
 				EncryptedPassword = "321atokamalo",
@@ -44,7 +41,6 @@ namespace Logistics.ObjectMothers
 		public static Notification CreateSmsNotification(int id)
 		{
 			return new Notification {
-				Id = 1,
 				ShortValue = "Ola.",
 				FullValue = "Piesek. Jedyna słuszna w życiu jest niepewność dnia poprzedniego.",
 				NotificationType = NotificationType.SMS
@@ -54,7 +50,6 @@ namespace Logistics.ObjectMothers
 		public static Notification CreateEmailNotification(int id)
 		{
 			return new Notification {
-				Id = 2,
 				ShortValue = "Zenek.",
 				FullValue = "Zenek. Lubi jeś małe rybki. ",
 				NotificationType = NotificationType.EMAIL
@@ -64,7 +59,6 @@ namespace Logistics.ObjectMothers
 		public static Log CreateNewLog(uint id)
 		{
 			return new Log {
-				Id = id,
 				Value = "Ola",
 				CreatedAt = DateTime.Now
 			};

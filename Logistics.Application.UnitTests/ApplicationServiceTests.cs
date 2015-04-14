@@ -23,7 +23,6 @@ namespace Logistics.Application.UnitTests
 			IApplicationService aps = new ApplicationService(userRepositoryMock.Object, orderRepositoryMock.Object, notificationRepositoryMock.Object, logRepositoryMock.Object);
 
 			var order = new Order { 
-				Id = 1, 
 				Adress = new Adress { City = "Wroclaw", Street = "Szczytnicka", HouseNumber = 4 }
 			};
 
@@ -46,7 +45,6 @@ namespace Logistics.Application.UnitTests
 			IApplicationService aps = new ApplicationService(userRepositoryMock.Object, orderRepositoryMock.Object, notificationRepositoryMock.Object, logRepositoryMock.Object);
 
 			var order = new Order { 
-				Id = 1, 
 				Adress = new Adress { City = "Wroclaw", Street = "Szczytnicka", HouseNumber = 4 }
 			};
 					 
@@ -69,7 +67,6 @@ namespace Logistics.Application.UnitTests
 			IApplicationService aps = new ApplicationService(userRepositoryMock.Object, orderRepositoryMock.Object, notificationRepositoryMock.Object, logRepositoryMock.Object);
 
 			var order = new Order { 
-				Id = 1, 
 				Adress = new Adress { City = "Wroclaw", Street = "Szczytnicka", HouseNumber = 4 }
 			};
 

@@ -1,12 +1,15 @@
 ﻿using NUnit.Framework;
 using System;
+using System.Collections.Generic;
+using System.Threading;
+using System.Text;
+using System.Linq;
 using Logistics.Infrastructure.Repositories;
 using Logistics.Application.Services;
 using Logistics.Domain.Repositories;
 using Moq;
 using Logistics.ObjectMothers;
 using Logistics.Domain.Model;
-using System.Collections.Generic;
 
 namespace Logistics.Application.UnitTests
 {
@@ -66,16 +69,14 @@ namespace Logistics.Application.UnitTests
 			Mock<IUserRepository> userRepositoryMock = new Mock<IUserRepository>();
 			IUserService us = new UserService(userRepositoryMock.Object);
 
-			var user = UserObjectMother.CreateNewClient();
-			us.CreateNewUser (user);
+			IList<User> users = new List<User>();
+			var user = UserObjectMother.CreateNewAdmin();
+			users.Add (user);
+			userRepositoryMock.Setup (r => r.FindAll() ).Returns (users);
+			us.GetAllUsers ();
 
-			// Czemu nie działa ಥ_ಥ
-			// Console.WriteLine (us.GetAllUsers ().Count);
-			us.GetAllClients();
-			us.GetAllClients();
-			us.GetAllClients();
-
-			userRepositoryMock.Verify(k => k.FindAllWithRole(Role.CLIENT), Times.Exactly(3));
+			userRepositoryMock.Verify(k => k.FindAll(), Times.Once());
+			Assert.AreEqual (us.GetAllUsers ().Count (), 1);
 		}
 
 		[Test ()]

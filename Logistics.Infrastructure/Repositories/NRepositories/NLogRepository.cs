@@ -10,32 +10,21 @@ using Logistics.Domain;
 namespace Logistics.Infrastructure
 {
 	public class NLogRepository  : ILogRepository
-	{
-		public NLogRepository ()
-		{
-
-		}
-			
+	{		
 		public void Insert (Log log)
 		{
-			using (var session = NHibernateHelper.OpenSession ()) 
-			{
-				using (var transaction = session.BeginTransaction ()) 
-				{
-					var newLog = new Log {
-						Value = log.Value,
-						CreatedAt = DateTime.Now,
-						User = log.User
-					};
-					session.Save (newLog);
-					transaction.Commit ();
-				}
-			}
+			NHibernateHelper.Insert (log);
+		}
+
+		public void Update (Log log)
+		{
+
 		}
 
 		public void Delete (uint id)
 		{
-			throw new NotImplementedException ();
+			Log log = Find (id);
+			NHibernateHelper.Delete (log);
 		}
 
 		public Log Find (uint id)
