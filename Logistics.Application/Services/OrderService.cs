@@ -1,5 +1,5 @@
 ﻿using System;
-using Logistics.Infrastructure.Repositories;
+using Logistics.Infrastructure.NRepositories;
 using Logistics.Application.Services;
 using Logistics.Domain.Model;
 using System.Collections.Generic;
@@ -20,10 +20,10 @@ namespace Logistics.Application.Services
 		{
 			_orderRepository = orderRepository;
 		}
-		public Order CreateOrder( Adress adress, Payment payment, uint priority )
+		public Order CreateOrder( Address adress, Payment payment, int priority )
 		{
 			Order o = new Order { 
-				Adress = adress,
+				Address = adress,
 				Payment = payment,
 				Priority = priority
 			};
@@ -33,7 +33,7 @@ namespace Logistics.Application.Services
 		{
 			_orderRepository.Delete (order.Id);
 		}
-		public Order GetOrder (uint id)
+		public Order GetOrder (int id)
 		{
 			return _orderRepository.Find (id);
 		}

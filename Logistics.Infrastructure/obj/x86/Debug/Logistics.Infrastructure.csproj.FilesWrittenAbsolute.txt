@@ -6,11 +6,6 @@
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Infrastructure/obj/x86/Debug/Logistics.Infrastructure.dll.mdb
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Infrastructure/bin/Debug/Iesi.Collections.dll
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Infrastructure/bin/Debug/NHibernate.dll
-/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Infrastructure/bin/Debug/System.Data.SQLite.dll
-/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Infrastructure/bin/Debug/System.Data.SQLite.Linq.dll
-/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Infrastructure/bin/Debug/EntityFramework.dll
-/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Infrastructure/bin/Debug/EntityFramework.SqlServer.dll
-/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Infrastructure/bin/Debug/System.Data.SQLite.EF6.dll
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Infrastructure/bin/Debug/FluentNHibernate.dll
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Infrastructure/bin/Debug/Logistics.Domain.dll
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Infrastructure/bin/Debug/Logistics.Domain.dll.mdb

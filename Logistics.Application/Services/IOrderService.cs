@@ -6,9 +6,9 @@ namespace Logistics.Application.Services
 {
 	public interface IOrderService
 	{
-		Order CreateOrder(Adress adress, Payment payment, uint Priority);
+		Order CreateOrder(Address adress, Payment payment, int Priority);
 		void DeleteOrder(Order order);
-		Order GetOrder(uint id);
+		Order GetOrder(int id);
 		IList<Order> GetAllOrders();
 	}
 }

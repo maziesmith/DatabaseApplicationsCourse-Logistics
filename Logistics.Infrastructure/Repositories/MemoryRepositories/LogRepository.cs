@@ -36,12 +36,12 @@ namespace Logistics.Infrastructure.Repositories
 			oldLog.User = log.User;
 		}
 
-		public void Delete (uint id)
+		public void Delete (int id)
 		{
 			logs.Remove(logs.Find(n => n.Id == id));
 		}
 
-		public Log Find (uint id)
+		public Log Find (int id)
 		{
 			return logs.FirstOrDefault(n => n.Id == id);
 		}

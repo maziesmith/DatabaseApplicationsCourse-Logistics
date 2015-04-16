@@ -13,7 +13,7 @@ namespace Logistics.Domain.Model
 			Id (x => x.Id);
 			Map (x => x.Value);
 			Map (x => x.CreatedAt);
-			References (x => x.User).Cascade.SaveUpdate();
+			References (x => x.User).Not.Nullable();
 		}
 	} 
 }

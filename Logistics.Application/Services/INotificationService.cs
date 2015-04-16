@@ -7,7 +7,7 @@ namespace Logistics.Application.Services
 	public interface INotificationService
 	{
 		void DeleteNotification(Notification notification);
-		Notification GetNotification(uint id);
+		Notification GetNotification(int id);
 		IList<Notification> GetAllNotification();
 	}
 }

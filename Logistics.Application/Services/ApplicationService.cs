@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Text;
 using System.Linq;
-using Logistics.Infrastructure.Repositories;
+using Logistics.Infrastructure.NRepositories;
 using Logistics.Application.Services;
 using Logistics.Domain.Model;
 using Logistics.Domain.Repositories;

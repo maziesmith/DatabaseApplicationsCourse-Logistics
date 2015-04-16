@@ -23,7 +23,7 @@ namespace Logistics.Application.UnitTests
 			IApplicationService aps = new ApplicationService(userRepositoryMock.Object, orderRepositoryMock.Object, notificationRepositoryMock.Object, logRepositoryMock.Object);
 
 			var order = new Order { 
-				Adress = new Adress { City = "Wroclaw", Street = "Szczytnicka", HouseNumber = 4 }
+				Address = new Address { City = "Wroclaw", Street = "Szczytnicka", HouseNumber = 4 }
 			};
 
 			var client = UserObjectMother.CreateNewClient();
@@ -45,7 +45,7 @@ namespace Logistics.Application.UnitTests
 			IApplicationService aps = new ApplicationService(userRepositoryMock.Object, orderRepositoryMock.Object, notificationRepositoryMock.Object, logRepositoryMock.Object);
 
 			var order = new Order { 
-				Adress = new Adress { City = "Wroclaw", Street = "Szczytnicka", HouseNumber = 4 }
+				Address = new Address { City = "Wroclaw", Street = "Szczytnicka", HouseNumber = 4 }
 			};
 					 
 			var client = UserObjectMother.CreateNewClient();
@@ -67,20 +67,13 @@ namespace Logistics.Application.UnitTests
 			IApplicationService aps = new ApplicationService(userRepositoryMock.Object, orderRepositoryMock.Object, notificationRepositoryMock.Object, logRepositoryMock.Object);
 
 			var order = new Order { 
-				Adress = new Adress { City = "Wroclaw", Street = "Szczytnicka", HouseNumber = 4 }
+				Address = new Address { City = "Wroclaw", Street = "Szczytnicka", HouseNumber = 4 }
 			};
 
 			var client = UserObjectMother.CreateNewClient();
 			var driver = UserObjectMother.CreateNewDriver();
 
 			aps.AddOrderToUserAndDriver (order, client, driver);
-
-			// Czemu nie działa ಥ_ಥ
-			// aps.GetAllOrdersFromDriver (driver);
-			 
-			// orderRepositoryMock.Verify(k => k.FindAll(), Times.Once());
-
-			Assert.Pass ();
 		}
 	}
 }

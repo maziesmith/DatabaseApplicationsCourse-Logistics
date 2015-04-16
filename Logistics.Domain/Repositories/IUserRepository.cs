@@ -8,9 +8,9 @@ namespace Logistics.Domain.Repositories
 	{
 		void Insert(User user);
 
-		void Delete(uint id);
+		void Delete(int id);
 
-		User Find(uint id);
+		User Find(int id);
 
 		void Update(User user);
 

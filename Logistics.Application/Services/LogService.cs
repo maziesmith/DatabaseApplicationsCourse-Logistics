@@ -1,5 +1,5 @@
 ﻿using System;
-using Logistics.Infrastructure.Repositories;
+using Logistics.Infrastructure.NRepositories;
 using Logistics.Application.Services;
 using Logistics.Domain.Model;
 using System.Collections.Generic;
@@ -31,7 +31,7 @@ namespace Logistics.Application.Services
 			_logRepository.Delete (log.Id);
 		}
 
-		public Log GetLog (uint id)
+		public Log GetLog (int id)
 		{
 			return _logRepository.Find (id);
 		}

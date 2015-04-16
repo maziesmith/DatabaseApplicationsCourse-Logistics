@@ -8,7 +8,7 @@ namespace Logistics.Application.Services
 	{
 		void AddLog(Log log ,User user);
 		void DeleteLog(Log log);
-		Log GetLog(uint id);
+		Log GetLog(int id);
 		IList<Log> GetAllLogs();
 	}
 }

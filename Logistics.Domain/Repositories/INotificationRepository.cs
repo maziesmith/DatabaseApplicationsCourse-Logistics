@@ -8,11 +8,11 @@ namespace Logistics.Domain.Repositories
 	{
 		void Insert(Notification notification);
 
-		void Delete(uint id);
+		void Delete(int id);
 
 		void Update(Notification notification);
 
-		Notification Find(uint id);
+		Notification Find(int id);
 
 		IList<Notification> FindAllForUser(User user);
 

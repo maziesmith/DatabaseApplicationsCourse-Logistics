@@ -36,12 +36,12 @@ namespace Logistics.Infrastructure.Repositories
 			oldNotification.FullValue = notification.FullValue;
 		}
 
-		public void Delete (uint id)
+		public void Delete (int id)
 		{
 			notifications.Remove(notifications.Find(n => n.Id == id));
 		}
 
-		public Notification Find (uint id)
+		public Notification Find (int id)
 		{
 			return notifications.FirstOrDefault(n => n.Id == id);
 		}

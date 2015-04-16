@@ -8,11 +8,11 @@ namespace Logistics.Domain.Repositories
 	{
 		void Insert(Order order);
 
-		void Delete(uint id);
+		void Delete(int id);
 
 		void Update(Order order);
 
-		Order Find(uint id);
+		Order Find(int id);
 
 		IList<Order> FindAllForUser(User user);
 

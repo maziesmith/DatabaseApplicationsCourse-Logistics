@@ -17,7 +17,7 @@ namespace Logistics.Infrastructure.Repositories
 			orders = new List<Order>
 			{
 				new Order {  
-					Adress = new Adress { City = "Wroclaw", Street = "Szczytnicka", HouseNumber = 4 }
+					Address = new Address { City = "Wroclaw", Street = "Szczytnicka", HouseNumber = 4 }
 				}
 			};
 		}
@@ -30,17 +30,17 @@ namespace Logistics.Infrastructure.Repositories
 		public void Update(Order order)
 		{
 			var oldOrder = orders.FirstOrDefault(o => o.Id == order.Id);
-			oldOrder.Adress = order.Adress;
+			oldOrder.Address = order.Address;
 			oldOrder.Payment = order.Payment;
 			oldOrder.Status = order.Status;
 		}
 
-		public void Delete (uint id)
+		public void Delete (int id)
 		{
 			orders.Remove(orders.Find(o => o.Id == id));
 		}
 
-		public Order Find (uint id)
+		public Order Find (int id)
 		{
 			return orders.FirstOrDefault(o => o.Id == id);
 		}

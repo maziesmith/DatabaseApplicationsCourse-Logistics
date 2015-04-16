@@ -4,7 +4,7 @@ namespace Logistics.Domain.Model
 {
 	public class Notification
 	{
-		public virtual uint Id { get; protected set; }
+		public virtual int Id { get; protected set; }
 		public virtual string ShortValue { get; set; }
 		public virtual string FullValue { get; set; }
 		public virtual Order Order { get; set; } 

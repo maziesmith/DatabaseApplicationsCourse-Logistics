@@ -34,24 +34,20 @@ namespace Logistics.Domain
 
 		private static ISessionFactory CreateSessionFactory()
 		{
+			var connectionStr = "Server=127.0.0.1;Port=5432;Database=logisticsdatabase;User Id=tori;Password=password123;";
 			return Fluently.Configure()
-				.Database(SQLiteConfiguration.Standard
-					.UsingFile(DbFile)
-					.ShowSql()
-				)
+				.Database(PostgreSQLConfiguration.Standard.ConnectionString(connectionStr)
+				.ShowSql())
 				.Mappings( m => 
 					m.FluentMappings.AddFromAssembly( Assembly.GetExecutingAssembly() ))
-				.ExposeConfiguration(BuildSchema)
+				.ExposeConfiguration(cfg =>
+					{
+						var schemaExport = new SchemaExport(cfg);
+						schemaExport.Drop(true, true);
+						schemaExport.Create(true, true);
+					})
+
 				.BuildSessionFactory();
-		}
-
-		private static void BuildSchema(Configuration config)
-		{
-			if (File.Exists(DbFile))
-				File.Delete(DbFile);
-
-			new SchemaExport(config)
-				.Create(false, true);
 		}
 
 		public static ISession OpenSession()

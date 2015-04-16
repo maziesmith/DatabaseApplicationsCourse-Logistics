@@ -16,10 +16,11 @@ namespace Logistics.Domain.Model
 			Map (x => x.Email);
 			Map (x => x.EncryptedPassword);
 			Map (x => x.PhoneNumber);
-			Map (x => x.Role);
+			Map (x => x.Role).CustomType<int>();
 			Map (x => x.CreatedAt);
-			References (x => x.Notification).Cascade.SaveUpdate();
-			References (x => x.Log).Cascade.SaveUpdate();
+			Map (x => x.UpdatedAt);
+			HasMany (x => x.Notifications);
+			HasMany (x => x.Logs);
 		}
 	} 
 }

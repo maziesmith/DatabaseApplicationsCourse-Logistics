@@ -1,5 +1,5 @@
 ﻿using System;
-using Logistics.Infrastructure.Repositories;
+using Logistics.Infrastructure.NRepositories;
 using Logistics.Application.Services;
 using Logistics.Domain.Model;
 using System.Collections.Generic;
@@ -65,7 +65,7 @@ namespace Logistics.Application.Services
 		{
 			_userRepository.Delete (user.Id);
 		}
-		public User GetUser (uint id)
+		public User GetUser (int id)
 		{
 			return _userRepository.Find (id);
 		}

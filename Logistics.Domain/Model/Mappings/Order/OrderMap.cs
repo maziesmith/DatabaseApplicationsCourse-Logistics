@@ -6,20 +6,39 @@ using FluentNHibernate.Mapping;
 
 namespace Logistics.Domain.Model
 {
+	public class AddressMap : ComponentMap<Address>
+	{
+		public AddressMap()
+		{
+			Map (x => x.City);
+			Map (x => x.Street);
+			Map (x => x.HouseNumber);
+		}
+	}
+
+	public class PaymentMap : ComponentMap<Payment>
+	{
+		public PaymentMap()
+		{
+			Map (x => x.Value);
+			Map (x => x.Currency).CustomType<int>();
+		}
+	}
+
 	public class OrderMap : ClassMap<Order>
 	{
 		public OrderMap()
 		{
 			Id (x => x.Id);
-			Map (x => x.Adress);
-			Map (x => x.Payment);
-			Map (x => x.Status);
+			Component(x => x.Address);
+			Component (x => x.Payment);
+			Map (x => x.Status).CustomType<int>();
 			Map (x => x.UpdatedAt);
-			Map (x => x.UpdatedBy);
+			References (x => x.UpdatedBy);
 			Map (x => x.DeliveryDateTime);
 			Map (x => x.Priority);
-			Map (x => x.Client);
-			Map (x => x.Driver);
+			References (x => x.Client);
+			References (x => x.Driver);
 		}
 	} 
 }

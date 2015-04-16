@@ -1,5 +1,5 @@
 ﻿using System;
-using Logistics.Infrastructure.Repositories;
+using Logistics.Infrastructure.NRepositories;
 using Logistics.Application.Services;
 using Logistics.Domain.Model;
 using System.Collections.Generic;
@@ -26,7 +26,7 @@ namespace Logistics.Application.Services
 			_notificationRepository.Delete (notification.Id);
 		}
 
-		public Notification GetNotification (uint id)
+		public Notification GetNotification (int id)
 		{
 			return _notificationRepository.Find (id);
 		}

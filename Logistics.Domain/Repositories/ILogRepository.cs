@@ -8,11 +8,11 @@ namespace Logistics.Domain.Repositories
 	{
 		void Insert(Log log);
 
-		void Delete(uint id);
+		void Delete(int id);
 
 		void Update(Log log);
 
-		Log Find(uint id);
+		Log Find(int id);
 
 		IList<Log> FindAll();
 	}

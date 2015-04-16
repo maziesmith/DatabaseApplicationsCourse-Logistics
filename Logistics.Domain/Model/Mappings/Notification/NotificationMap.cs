@@ -13,8 +13,8 @@ namespace Logistics.Domain.Model
 			Id (x => x.Id);
 			Map (x => x.ShortValue);
 			Map (x => x.FullValue);
-			References (x => x.Order).Cascade.All();
-			References (x => x.User).Cascade.All();
+			References (x => x.Order);
+			References (x => x.User);
 			Map (x => x.NotificationType);
 		}
 	} 

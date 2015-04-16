@@ -37,12 +37,12 @@ namespace Logistics.Infrastructure.Repositories
 			oldUser.PhoneNumber = user.PhoneNumber;
 		}
 
-		public void Delete (uint id)
+		public void Delete (int id)
 		{
 			users.Remove(users.Find(u => u.Id == id));
 		}
 
-		public User Find (uint id)
+		public User Find (int id)
 		{
 			return users.FirstOrDefault(u => u.Id == id);
 		}

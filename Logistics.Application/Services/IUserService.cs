@@ -12,7 +12,7 @@ namespace Logistics.Application.Services
 		void CreateNewDriver(User user);
 		void CreateNewAdmin(User user);
 		void DeleteUser(User user);
-		User GetUser(uint id);
+		User GetUser(int id);
 		IList<User> GetAllClients();
 		IList<User> GetAllDrivers();
 		IList<User> GetAllAdmins();

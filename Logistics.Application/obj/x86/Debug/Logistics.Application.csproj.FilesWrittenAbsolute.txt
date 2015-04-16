@@ -1,17 +1,4 @@
-/Users/torianin/Projects/logisticsApp/Logistics.Application/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
-/Users/torianin/Projects/logisticsApp/Logistics.Application/bin/Debug/Logistics.Application.dll.mdb
-/Users/torianin/Projects/logisticsApp/Logistics.Application/bin/Debug/Logistics.Application.dll
-/Users/torianin/Projects/logisticsApp/Logistics.Application/obj/x86/Debug/Logistics.Application.dll
-/Users/torianin/Projects/logisticsApp/Logistics.Application/obj/x86/Debug/Logistics.Application.dll.mdb
-/Users/torianin/Projects/logisticsApp/Logistics.Application/bin/Debug/Logistics.Domain.dll
-/Users/torianin/Projects/logisticsApp/Logistics.Application/bin/Debug/Logistics.Domain.dll.mdb
-/Users/torianin/Projects/logisticsApp/Logistics.Application/bin/Debug/Logistics.Infrastructure.dll
-/Users/torianin/Projects/logisticsApp/Logistics.Application/bin/Debug/Logistics.Infrastructure.dll.mdb
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Application/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
-/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Application/bin/Debug/Logistics.Application.dll.mdb
-/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Application/bin/Debug/Logistics.Application.dll
-/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Application/obj/x86/Debug/Logistics.Application.dll
-/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Application/obj/x86/Debug/Logistics.Application.dll.mdb
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Application/bin/Debug/Logistics.Domain.dll
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Application/bin/Debug/Logistics.Domain.dll.mdb
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Application/bin/Debug/Logistics.Infrastructure.dll
@@ -19,3 +6,7 @@
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Application/bin/Debug/NHibernate.dll
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Application/bin/Debug/FluentNHibernate.dll
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Application/bin/Debug/Iesi.Collections.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Application/bin/Debug/Logistics.Application.dll.mdb
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Application/bin/Debug/Logistics.Application.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Application/obj/x86/Debug/Logistics.Application.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Application/obj/x86/Debug/Logistics.Application.dll.mdb
