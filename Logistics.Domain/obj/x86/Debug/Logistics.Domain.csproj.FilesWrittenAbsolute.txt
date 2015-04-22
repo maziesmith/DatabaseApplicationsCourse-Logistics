@@ -9,3 +9,5 @@
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Domain/bin/Debug/Npgsql.dll
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Domain/bin/Debug/Iesi.Collections.dll
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Domain/bin/Debug/NHibernate.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Domain/bin/Debug/Microsoft.Practices.EnterpriseLibrary.Common.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Logistics.Domain/bin/Debug/Microsoft.Practices.EnterpriseLibrary.Validation.dll

@@ -13,6 +13,7 @@ namespace Logistics.Infrastructure.Model
 		{
 			Map (x => x.City);
 			Map (x => x.Street);
+			Map (x => x.PostalCode);
 			Map (x => x.HouseNumber);
 		}
 	}

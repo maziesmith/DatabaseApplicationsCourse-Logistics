@@ -20,3 +20,5 @@
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.ConsoleApp/bin/Debug/Logistics.Infrastructure.dll.mdb
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.ConsoleApp/bin/Debug/Logistics.ObjectMothers.dll
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.ConsoleApp/bin/Debug/Logistics.ObjectMothers.dll.mdb
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.ConsoleApp/bin/Debug/Microsoft.Practices.EnterpriseLibrary.Common.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.ConsoleApp/bin/Debug/Microsoft.Practices.EnterpriseLibrary.Validation.dll
