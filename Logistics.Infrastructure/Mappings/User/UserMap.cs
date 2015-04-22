@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using FluentNHibernate.Mapping;
+using Logistics.Domain.Model;
 
-namespace Logistics.Domain.Model
+namespace Logistics.Infrastructure.Model
 {
 	public class UserMap : ClassMap<User>
 	{
 		public UserMap()
 		{
 			Id (x => x.Id);
-			Map (x => x.Login);
 			Map (x => x.Username);
 			Map (x => x.Email);
 			Map (x => x.EncryptedPassword);
@@ -19,8 +19,9 @@ namespace Logistics.Domain.Model
 			Map (x => x.Role).CustomType<int>();
 			Map (x => x.CreatedAt);
 			Map (x => x.UpdatedAt);
-			HasMany (x => x.Notifications);
-			HasMany (x => x.Logs);
+			Map (x => x.Login);
+			HasMany (x => x.Notifications).LazyLoad();
+			HasMany (x => x.Logs).LazyLoad();
 		}
 	} 
 }

@@ -1,10 +1,26 @@
 ﻿using System;
 using Logistics.Domain.Model;
+using System.Collections.Generic;
 
 namespace Logistics.ObjectMothers
 {
 	public class UserObjectMother
 	{
+		public static List<User> CreateNewClients(int numberOfClients)
+		{
+			List<User> users = new List<User> ();
+			for (int i = 0; i < numberOfClients; i++) {
+				User u = new User {
+					Login = "Olamakota",
+					Email = "tori@robert-i.com",
+					EncryptedPassword = "321atokamalo",
+					Role = Role.CLIENT
+				};
+				users.Add (u);
+			}
+			return users;
+		}
+
 		public static User CreateNewClient()
 		{
 			User u = new User {
@@ -41,7 +57,6 @@ namespace Logistics.ObjectMothers
 		public static Notification CreateSmsNotification(int id)
 		{
 			return new Notification {
-				ShortValue = "Ola.",
 				FullValue = "Piesek. Jedyna słuszna w życiu jest niepewność dnia poprzedniego.",
 				NotificationType = NotificationType.SMS
 			};
@@ -50,7 +65,6 @@ namespace Logistics.ObjectMothers
 		public static Notification CreateEmailNotification(int id)
 		{
 			return new Notification {
-				ShortValue = "Zenek.",
 				FullValue = "Zenek. Lubi jeś małe rybki. ",
 				NotificationType = NotificationType.EMAIL
 			};

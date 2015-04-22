@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using FluentNHibernate.Mapping;
+using Logistics.Domain.Model;
 
-namespace Logistics.Domain.Model
+namespace Logistics.Infrastructure.Model
 {
 	public class AddressMap : ComponentMap<Address>
 	{
@@ -37,8 +38,8 @@ namespace Logistics.Domain.Model
 			References (x => x.UpdatedBy);
 			Map (x => x.DeliveryDateTime);
 			Map (x => x.Priority);
-			References (x => x.Client);
-			References (x => x.Driver);
+			References (x => x.Client).LazyLoad();
+			References (x => x.Driver).Not.LazyLoad();
 		}
 	} 
 }

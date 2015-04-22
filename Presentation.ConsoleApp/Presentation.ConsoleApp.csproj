@@ -58,6 +58,14 @@
       <Project>{4DED54D7-6D09-4C0E-A694-10A86EA27900}</Project>
       <Name>Logistics.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Logistics.Infrastructure\Logistics.Infrastructure.csproj">
+      <Project>{4B514227-FE80-44E2-A218-7FD33D164974}</Project>
+      <Name>Logistics.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logistics.ObjectMothers\Logistics.ObjectMothers.csproj">
+      <Project>{3123276A-3E17-45B2-A98A-FF7C6B2CDAFB}</Project>
+      <Name>Logistics.ObjectMothers</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

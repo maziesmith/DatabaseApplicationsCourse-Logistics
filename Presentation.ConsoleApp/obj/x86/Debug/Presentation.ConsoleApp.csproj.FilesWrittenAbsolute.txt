@@ -16,3 +16,7 @@
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.ConsoleApp/bin/Debug/System.Data.SQLite.dll
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.ConsoleApp/bin/Debug/Mono.Security.dll
 /Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.ConsoleApp/bin/Debug/Npgsql.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.ConsoleApp/bin/Debug/Logistics.Infrastructure.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.ConsoleApp/bin/Debug/Logistics.Infrastructure.dll.mdb
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.ConsoleApp/bin/Debug/Logistics.ObjectMothers.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.ConsoleApp/bin/Debug/Logistics.ObjectMothers.dll.mdb

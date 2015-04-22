@@ -44,6 +44,11 @@
     <Compile Include="Repositories\NRepositories\NotificationRepository.cs" />
     <Compile Include="Repositories\NRepositories\OrderRepository.cs" />
     <Compile Include="Repositories\NRepositories\UserRepository.cs" />
+    <Compile Include="Mappings\Log\LogMap.cs" />
+    <Compile Include="Mappings\NHibernateHelper.cs" />
+    <Compile Include="Mappings\Notification\NotificationMap.cs" />
+    <Compile Include="Mappings\Order\OrderMap.cs" />
+    <Compile Include="Mappings\User\UserMap.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Logistics.Domain\Logistics.Domain.csproj">
@@ -62,6 +67,7 @@
     <Reference Include="FluentNHibernate">
       <HintPath>..\packages\FluentNHibernate.2.0.1.0\lib\net40\FluentNHibernate.dll</HintPath>
     </Reference>
+    <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

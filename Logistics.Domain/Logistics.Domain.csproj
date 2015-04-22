@@ -34,11 +34,6 @@
     <Folder Include="Model\" />
     <Folder Include="Repositories\" />
     <Folder Include="Model\Entities\" />
-    <Folder Include="Model\Mappings\" />
-    <Folder Include="Model\Mappings\Log\" />
-    <Folder Include="Model\Mappings\Notification\" />
-    <Folder Include="Model\Mappings\Order\" />
-    <Folder Include="Model\Mappings\User\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Repositories\INotificationRepository.cs" />
@@ -56,11 +51,6 @@
     <Compile Include="Model\Entities\User\Role.cs" />
     <Compile Include="Model\Entities\User\Settings.cs" />
     <Compile Include="Model\Entities\User\User.cs" />
-    <Compile Include="Model\Mappings\Log\LogMap.cs" />
-    <Compile Include="Model\Mappings\Notification\NotificationMap.cs" />
-    <Compile Include="Model\Mappings\Order\OrderMap.cs" />
-    <Compile Include="Model\Mappings\User\UserMap.cs" />
-    <Compile Include="Model\Mappings\NHibernateHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FluentNHibernate">

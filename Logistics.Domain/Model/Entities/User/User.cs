@@ -21,7 +21,6 @@ namespace Logistics.Domain.Model
 		public virtual ISet<Notification> Notifications { get; set; }
 		public virtual Log Log { get; set; }
 		public virtual IList<Log> Logs { get; set; }
-
 	}
 }
 

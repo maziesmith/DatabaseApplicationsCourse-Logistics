@@ -12,7 +12,7 @@ using NHibernate.Tool.hbm2ddl;
 using NHibernate.Linq;
 
 
-namespace Logistics.Domain
+namespace Logistics.Infrastructure
 {
 	public class NHibernateHelper
 	{
@@ -48,6 +48,11 @@ namespace Logistics.Domain
 					})
 
 				.BuildSessionFactory();
+		}
+
+		public static IStatelessSession OpenStatelessSession()
+		{
+			return SessionFactory.OpenStatelessSession ();
 		}
 
 		public static ISession OpenSession()
