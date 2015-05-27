@@ -1,0 +1,17 @@
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.MobileApp/MobileCRM.Services/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile49.AssemblyAttribute.cs
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.MobileApp/MobileCRM.Services/bin/Debug/MobileCRM.Services.dll.mdb
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.MobileApp/MobileCRM.Services/bin/Debug/MobileCRM.Services.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.MobileApp/MobileCRM.Services/obj/Debug/MobileCRM.Services.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.MobileApp/MobileCRM.Services/obj/Debug/MobileCRM.Services.dll.mdb
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.MobileApp/MobileCRM.Services/bin/Debug/Xamarin.Forms.Core.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.MobileApp/MobileCRM.Services/bin/Debug/Xamarin.Forms.Xaml.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.MobileApp/MobileCRM.Services/bin/Debug/mscorlib.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.MobileApp/MobileCRM.Services/bin/Debug/System.Core.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.MobileApp/MobileCRM.Services/bin/Debug/System.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.MobileApp/MobileCRM.Services/bin/Debug/System.Linq.Queryable.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.MobileApp/MobileCRM.Services/bin/Debug/System.Diagnostics.Tools.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.MobileApp/MobileCRM.Services/bin/Debug/System.ComponentModel.EventBasedAsync.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.MobileApp/MobileCRM.Services/bin/Debug/System.Net.Primitives.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.MobileApp/MobileCRM.Services/bin/Debug/System.Net.Requests.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.MobileApp/MobileCRM.Services/bin/Debug/System.Net.NetworkInformation.dll
+/Users/torianin/DatabaseApplicationsCourse-Logistics/Presentation.MobileApp/MobileCRM.Services/bin/Debug/System.Text.RegularExpressions.dll

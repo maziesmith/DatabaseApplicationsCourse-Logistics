@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="Presentation.WebApp/Presentation.WebApp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Logistics.Application/Services/IOrderService.cs">
+    <Files>
+      <File FileName="Logistics.Application/Services/IOrderService.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="Logistics.Domain/Model/Mappings/Order/OrderMap.cs" line="16" offsetX="336" offsetY="225" expression="x.City" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>
