@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{4B514227-FE80-44E2-A218-7FD33D164974}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Logistics.Infrastructure</RootNamespace>
+    <AssemblyName>Logistics.Infrastructure</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="Repositories\Memory\LogRepository.cs" />
+    <Compile Include="Repositories\Memory\NotificationRepository.cs" />
+    <Compile Include="Repositories\Memory\OrderRepository.cs" />
+    <Compile Include="Repositories\Memory\UserRepository.cs" />
+    <Compile Include="Repositories\NHibernate\LogRepository.cs" />
+    <Compile Include="Repositories\NHibernate\NotificationRepository.cs" />
+    <Compile Include="Repositories\NHibernate\OrderRepository.cs" />
+    <Compile Include="Repositories\NHibernate\UserRepository.cs" />
+    <Compile Include="Mappings\Log\LogMap.cs" />
+    <Compile Include="Mappings\NHibernateHelper.cs" />
+    <Compile Include="Mappings\Notification\NotificationMap.cs" />
+    <Compile Include="Mappings\Order\OrderMap.cs" />
+    <Compile Include="Mappings\User\UserMap.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logistics.Domain\Logistics.Domain.csproj">
+      <Project>{4DED54D7-6D09-4C0E-A694-10A86EA27900}</Project>
+      <Name>Logistics.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\packages\Iesi.Collections.4.0.0.4000\lib\net40\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\packages\NHibernate.4.0.0.4000\lib\net40\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\packages\FluentNHibernate.2.0.1.0\lib\net40\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="app.config" />
+  </ItemGroup>
+</Project>

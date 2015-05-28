@@ -1,8 +1,13 @@
 ﻿<Properties StartupItem="Presentation.WebApp/Presentation.WebApp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Logistics.Application/Services/IOrderService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation.WebApp/Controllers/OrderController.cs">
     <Files>
       <File FileName="Logistics.Application/Services/IOrderService.cs" Line="1" Column="1" />
+      <File FileName="Presentation.WebApp/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Presentation.WebApp/Controllers/OrderController.cs" Line="32" Column="21" />
+      <File FileName="Logistics.Application/Services/ApplicationService.cs" Line="1" Column="1" />
+      <File FileName="Logistics.Application/Services/OrderService.cs" Line="1" Column="1" />
+      <File FileName="Logistics.ObjectMothers/OrderObjectMother.cs" Line="10" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

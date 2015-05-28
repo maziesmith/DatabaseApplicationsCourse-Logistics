@@ -1,0 +1,58 @@
+﻿using System.Collections.Generic;
+using System.Linq;
+using Logistics.Domain.Model.Entities.Notification;
+using Logistics.Domain.Model.Entities.User;
+using Logistics.Domain.Repositories;
+
+namespace Logistics.Infrastructure.Repositories.Memory
+{
+	public class NotificationRepository : INotificationRepository
+	{
+		private List<Notification> notifications  = new List<Notification>();
+
+		public NotificationRepository ()
+		{
+			notifications = new List<Notification>
+			{
+				new Notification {
+					ShortValue = "Ola",
+					FullValue = "Piesek",
+					NotificationType = NotificationType.EMAIL
+				}
+			};
+		}
+			
+		public void Insert (Notification notification)
+		{
+			notifications.Add(notification);
+		}
+
+		public void Update(Notification notification)
+		{
+			var oldNotification = notifications.FirstOrDefault(n => n.Id == notification.Id);
+			oldNotification.ShortValue = notification.ShortValue;
+			oldNotification.FullValue = notification.FullValue;
+		}
+
+		public void Delete (int id)
+		{
+			notifications.Remove(notifications.Find(n => n.Id == id));
+		}
+
+		public Notification Find (int id)
+		{
+			return notifications.FirstOrDefault(n => n.Id == id);
+		}
+
+		public IList<Notification> FindAllForUser (User user)
+		{
+			return notifications.Where(n => n.User == user).ToList();
+		}
+
+		public IList<Notification> FindAll ()
+		{
+			return notifications;
+		}
+	}
+}
+
